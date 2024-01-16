@@ -1,0 +1,15 @@
+.headerWarp{
+  width: 100%;
+  padding: 40px;
+  .dateTime{font-size: 42px;}
+  .dateDay{
+    font-size: 24px;  
+    margin-bottom: 20px;
+  }
+  .task{
+    color: aquamarine;
+    font-size: 24px;
+    span{ color: red}
+  }
+
+}

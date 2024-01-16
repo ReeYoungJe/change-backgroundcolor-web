@@ -1,13 +1,14 @@
-import './TodoItem.css';
-import React from 'react';
+import React, {Component} from 'react';
 
-export class TodoItem extends React.Component {
-  render() {
-    return (
-      <div className={'item'}>
-        <span>{this.props.title}</span>
-        <span>{this.props.description}</span>
-      </div>
-    )
-  }
+
+class TodoItem extends Component {
+	render() {
+		return (
+			<div>
+				
+			</div>
+		);
+	}
 }
+
+export default TodoItem;
