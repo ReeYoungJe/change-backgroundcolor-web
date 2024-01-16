@@ -1,15 +1,62 @@
-.headerWarp{
-  width: 100%;
-  padding: 40px;
-  .dateTime{font-size: 42px;}
-  .dateDay{
-    font-size: 24px;  
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  &Inner {
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
     margin-bottom: 20px;
-  }
-  .task{
-    color: aquamarine;
-    font-size: 24px;
-    span{ color: red}
+    padding: 10px;
+    position: relative;
   }
 
+  &Title {
+    font-size: 16px;
+  }
+
+  &Email {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+  }
+
+  &Avaliable {
+    font-size: 12px;
+
+    span {
+      display: block;
+      position: relative;
+      padding-left: 25px;
+      &.on:before{
+        background: greenyellow;
+      }
+      &.off:before{
+        background: red;
+      }
+      &:before{
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        content: '';
+      }
+    }
+
+  }
+
+  &SubTitle {
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    font-size: 12px;
+  }
 }

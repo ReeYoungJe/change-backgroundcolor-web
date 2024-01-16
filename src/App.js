@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import Header from "./components/Header/Header";
-import TodoList from "./components/todo/TodoList";
 
 /**
  * Header 오늘 날짜와 요일을 나타 남  오늘 할일은 몇개 남았는지
@@ -73,12 +72,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<main className="main">
-				<section>
-					<Header/>
-					<TodoList/>
-				</section>
-			</main>
+			<div className="App">
+				<Header/>
+			</div>
 			// <div className="App" style={{display: 'flex', flexDirection: 'column', width: '100%', height: '100%'}}>
 			// 	<div className={'todo'}>
 			// 		{
