@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR&display=swap');
+
+.workInner {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+  font-family: 'Montserrat', sans-serif;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px
+}
+
+.workProject {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .left {
+    width: 500px;
+    height: 500px;
+    background: green;
+    border-radius: 20px;
+  }
+
+  .right {
+    width: 700px;
+
+    .projectDetail {
+      &Header {
+
+        .subTitle {
+          display: block;
+          font-size: 18px;
+          color: #a5a5a5;
+          margin-bottom: 10px;
+        }
+
+        .title {
+          font-size: 50px;
+          color: #333;
+          margin-bottom: 35px;
+          margin-left: -5px;
+        }
+
+        .skills {
+          margin-bottom: 30px;
+          ul {
+            display: flex;
+
+            li {
+              font-size: 20px;
+              gap: 10px;
+              padding-right: 15px;
+              color: #d0d0d0;
+              font-weight: 300;
+
+              &:first-child:before {
+                display: none
+              }
+
+              &:before {
+                content: '';
+                background-color: #d0d0d0;
+                display: inline-block;
+                height: 15px;
+                margin-right: 10px;
+                transform: skew(-15deg, -15deg);
+                vertical-align: middle;
+                width: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
