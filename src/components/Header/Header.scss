@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+KR&display=swap');
+
 
 .header {
   width: 90%;
   margin: 0 auto;
-  font-family: 'Noto Sans KR', sans-serif;
-
+  font-family: 'Montserrat', sans-serif;
   &Inner {
     border-top: 2px solid;
     border-bottom: 1px solid;
@@ -18,23 +19,25 @@
   }
 
   &Title {
-    font-size: 16px;
-  }
-
-  &Email {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 12px;
+    font-size: 14px;
+
+  }
+
+  &Email {
+
   }
 
   &Avaliable {
-    font-size: 12px;
+    font-size: 14px;
 
     span {
       display: block;
       position: relative;
       padding-left: 25px;
+
       &.on:before{
         background: greenyellow;
       }
@@ -55,8 +58,9 @@
 
   &SubTitle {
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     left: 10px;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
