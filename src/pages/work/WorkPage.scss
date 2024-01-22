@@ -3,24 +3,33 @@
 .workInner {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid;
   font-family: 'Montserrat', sans-serif;
   border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px
+  border-bottom-right-radius: 20px;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 100px;
+
 }
 
 .workProject {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  width: 1600px;
   align-items: center;
-  padding: 20px;
+  gap: 90px;
+  padding: 90px;
+  margin-bottom: 100px;
 
   .left {
     width: 500px;
     height: 500px;
-    background: green;
-    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #e9e9e9;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .right {
@@ -33,11 +42,11 @@
           display: block;
           font-size: 18px;
           color: #a5a5a5;
-          margin-bottom: 10px;
+          margin-bottom: -5px;
         }
 
         .title {
-          font-size: 50px;
+          font-size: 62px;
           color: #333;
           margin-bottom: 35px;
           margin-left: -5px;
@@ -45,6 +54,7 @@
 
         .skills {
           margin-bottom: 30px;
+
           ul {
             display: flex;
 
@@ -75,4 +85,111 @@
       }
     }
   }
+}
+
+.workContents {
+  margin: 20px;
+  min-height: 1000px;
+
+  img {
+    width: 100%;
+  }
+
+  .nt1 {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .nt2 {
+    display: flex;
+    gap: 200px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .nt3 {
+    ul {
+      display: flex;
+
+      li {
+        width: (100%/3);
+        padding: 30px;
+
+        img {
+          border: 1px solid #e9e9e9;
+          border-radius: 20px
+        }
+      }
+
+    }
+  }
+}
+
+.workMore {
+  width: 90%;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    margin-left: -30px;
+    .workMoreItem {
+      width: (100%/4);
+      box-sizing: border-box;
+      margin-left: 30px;
+
+
+      &Img {
+        overflow: hidden;
+        border: 1px solid #e9e9e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+      }
+
+      &Content {
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          word-break: break-word;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        p {
+          word-break: break-word;
+          overflow-wrap: break-word;
+          font-size: 18px;
+        }
+
+        .dateTime {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .sumIcon {
+          font-size: 14px;
+          position: relative;
+          padding-left: 40px;
+          line-height: 30px;
+          &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: red;
+            border-radius: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
 }
