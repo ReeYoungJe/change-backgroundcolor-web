@@ -66,7 +66,7 @@ export default class MainPage extends React.PureComponent {
 				</div>
 				<div class={"workContents"}>
 					<div className={"nt1"}>
-						<img src={require('../../asset/work/gongyoung/content_01.jpg')}/>
+						{/*<img src={require('../../asset/work/gongyoung/content_01.jpg')}/>*/}
 					</div>
 					<div className={"nt2"}>
 						<p>구축부터 유지보수까지 지속적으로 참여한 프로젝트에요. 기획, 개발, 테스트에 이르기까지 모든 실무자가 함께 공통의 과제를 바라보는 스프린트 방식으로 작업했습니다. 초기부터 함께 했기에 더욱
@@ -77,11 +77,11 @@ export default class MainPage extends React.PureComponent {
 					<div className={"nt3"}>
 						<ul>
 							<li>
-								<img src={require('../../asset/work/gongyoung/content_02.jpg')}/>
+								{/*<img src={require('../../asset/work/gongyoung/content_02.jpg')}/>*/}
 								모바일
 							</li>
-							<li><img src={require('../../asset/work/gongyoung/content_03.jpg')}/></li>
-							<li><img src={require('../../asset/work/gongyoung/content_03.jpg')}/></li>
+							{/*<li><img src={require('../../asset/work/gongyoung/content_03.jpg')}/></li>*/}
+							{/*<li><img src={require('../../asset/work/gongyoung/content_03.jpg')}/></li>*/}
 						</ul>
 					</div>
 					<div className={"nt4"}>

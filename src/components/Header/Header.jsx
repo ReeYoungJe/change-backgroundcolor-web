@@ -8,7 +8,7 @@ class Header extends React.Component {
 			<header className="header">
 				<div className="headerInner">
 					<div className="headerEmail">
-						zofhd2@naver.com
+						govlro1@naver.com
 					</div>
 					<div className="headerTitle">
 						<h1><Link to={"/"}>ZeroJ</Link></h1>
